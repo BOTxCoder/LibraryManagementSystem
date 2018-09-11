@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="440.0" prefWidth="400.0" style="-fx-background-color: #112f4f;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UpdateMembershipController">
+   <children>
+      <VBox layoutX="75.0" prefHeight="400.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="77.0" prefWidth="401.0">
+               <children>
+                  <VBox prefHeight="44.0" prefWidth="86.0" />
+                  <VBox prefHeight="44.0" prefWidth="202.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fill="#ebdddd" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Memebership">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="400.0">
+               <children>
+                  <VBox prefHeight="50.0" prefWidth="154.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#eed8d8" layoutX="22.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Membership Number ">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="50.0" prefWidth="245.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <HBox layoutX="7.0" layoutY="2.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: white; -fx-background-color: transaparent;">
+                                 <children>
+                                    <TextField fx:id="membershipId" prefHeight="25.0" prefWidth="193.0" style="-fx-background-color: transparent;" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="400.0">
+               <children>
+                  <VBox prefHeight="50.0" prefWidth="154.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#eed8d8" layoutX="66.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="50.0" prefWidth="245.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <HBox layoutX="7.0" layoutY="2.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: white; -fx-background-color: transaparent;">
+                                 <children>
+                                    <DatePicker fx:id="start" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="400.0">
+               <children>
+                  <VBox prefHeight="50.0" prefWidth="154.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#eed8d8" layoutX="66.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="50.0" prefWidth="245.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <HBox layoutX="7.0" layoutY="2.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: white; -fx-background-color: transaparent;">
+                                 <children>
+                                    <DatePicker fx:id="end" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="400.0">
+               <children>
+                  <VBox prefHeight="50.0" prefWidth="154.0">
+                     <children>
+                        <AnchorPane prefHeight="55.0" prefWidth="176.0">
+                           <children>
+                              <Text fill="#eed8d8" layoutX="15.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Membership Extension" wrappingWidth="123.8720703125">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="50.0" prefWidth="245.0">
+                     <children>
+                        <RadioButton fx:id="sixMonth" mnemonicParsing="false" text="Six Months" textFill="#ebe4e4" />
+                        <RadioButton fx:id="oneYear" mnemonicParsing="false" prefHeight="17.0" prefWidth="91.0" text="1 year" textFill="#ebe4e4" />
+                        <RadioButton fx:id="twoYear" mnemonicParsing="false" text="2 years" textFill="#ebe4e4" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="400.0">
+               <children>
+                  <VBox prefHeight="50.0" prefWidth="154.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#eed8d8" layoutX="15.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Membership Remove" wrappingWidth="123.8720703125">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="50.0" prefWidth="245.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <RadioButton fx:id="oneYear1" mnemonicParsing="false" textFill="#ebe4e4" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="57.0" prefWidth="400.0">
+               <children>
+                  <VBox prefHeight="55.0" prefWidth="198.0">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="cancel" mnemonicParsing="false" text="Cancel" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="55.0" prefWidth="198.0">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="confirm" mnemonicParsing="false" text="confirm" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="1.0" layoutY="476.0" prefHeight="50.0" prefWidth="400.0">
+         <children>
+            <VBox prefHeight="50.0" prefWidth="291.0">
+               <children>
+                  <Button fx:id="back" mnemonicParsing="false" text="Back" />
+               </children></VBox>
+            <VBox prefHeight="50.0" prefWidth="110.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="logout" layoutX="29.0" layoutY="13.0" mnemonicParsing="false" text="Logout" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

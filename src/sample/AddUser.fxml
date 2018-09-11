@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="384.0" style="-fx-background-color: #112f4f;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddUserController">
+   <top>
+      <HBox prefHeight="42.0" prefWidth="384.0" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <VBox prefHeight="390.0" prefWidth="37.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox prefHeight="390.0" prefWidth="39.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <HBox prefHeight="46.0" prefWidth="384.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="46.0" prefWidth="470.0">
+               <children>
+                  <Button fx:id="logout" layoutX="304.0" layoutY="11.0" mnemonicParsing="false" text="logout" />
+                  <Button fx:id="back" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" text="back" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="69.0" prefWidth="156.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <RadioButton fx:id="newUser" layoutX="29.0" layoutY="26.0" mnemonicParsing="false" text="New User" textFill="#f5eded">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </RadioButton>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="69.0" prefWidth="177.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <RadioButton fx:id="existingUser" layoutX="30.0" layoutY="26.0" mnemonicParsing="false" text="Existing User" textFill="#f2f0f0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </RadioButton>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="69.0" prefWidth="156.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#f5f4f4" layoutX="61.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="69.0" prefWidth="177.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <HBox layoutX="8.0" layoutY="14.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: white; -fx-background-color: transparent;">
+                                 <children>
+                                    <TextField fx:id="name" style="-fx-background-color: transparent;" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="69.0" prefWidth="156.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#fcf3f3" layoutX="61.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="69.0" prefWidth="177.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <CheckBox fx:id="isActive" layoutX="31.0" layoutY="25.0" mnemonicParsing="false" text="Active" textFill="#fff8f8">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="69.0" prefWidth="156.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#f5efef" layoutX="54.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Is Admin">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="69.0" prefWidth="177.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <CheckBox fx:id="isAdmin" layoutX="31.0" layoutY="26.0" mnemonicParsing="false" text="Admin" textFill="#f2f0f0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="69.0" prefWidth="156.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="cancel" layoutX="53.0" layoutY="22.0" mnemonicParsing="false" text="cancel" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="69.0" prefWidth="177.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="confirm" layoutX="39.0" layoutY="22.0" mnemonicParsing="false" text="confirm" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

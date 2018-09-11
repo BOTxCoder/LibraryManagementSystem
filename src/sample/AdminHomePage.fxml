@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #112f4f;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminHomePageController">
+   <children>
+      <TableView fx:id="tableView" layoutX="19.0" layoutY="132.0" prefHeight="200.0" prefWidth="566.0" style="-fx-background-color: #dadbcb;">
+        <columns>
+          <TableColumn fx:id="CodeNF" prefWidth="167.0" text="Code Number From" />
+          <TableColumn fx:id="CodeNT" prefWidth="170.0" text="Code Number To" />
+            <TableColumn fx:id="Topics" prefWidth="228.0" text="Topics" />
+        </columns>
+      </TableView>
+      <Button fx:id="Maintenanaces" layoutX="19.0" layoutY="92.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: grey;" text="Maintenanaces" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="reports" layoutX="210.0" layoutY="92.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: grey;" text="Reports" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="transactions" layoutX="400.0" layoutY="92.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: grey;" text="Transactions" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="logout" layoutX="525.0" layoutY="353.0" mnemonicParsing="false" style="-fx-background-color: grey;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="533.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: grey;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

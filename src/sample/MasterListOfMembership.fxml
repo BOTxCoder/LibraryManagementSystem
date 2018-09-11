@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="910.0" style="-fx-background-color: #112f4f;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MasterListOfMembershipController">
+   <top>
+      <HBox prefHeight="64.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane prefHeight="64.0" prefWidth="756.0">
+               <children>
+                  <Text fill="#fcefef" strokeType="OUTSIDE" strokeWidth="0.0" text="Master List Of Membership" wrappingWidth="263.13671875">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="35.0" prefWidth="756.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="35.0" prefWidth="783.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="back" layoutX="43.0" layoutY="2.0" mnemonicParsing="false" text="back" />
+                        <Button fx:id="logout" layoutX="681.0" layoutY="2.0" mnemonicParsing="false" text="Logout" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children></HBox>
+   </bottom>
+   <right>
+      <VBox prefHeight="301.0" prefWidth="29.0" BorderPane.alignment="CENTER" />
+   </right>
+   <left>
+      <VBox prefHeight="301.0" prefWidth="19.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="membershipId" prefWidth="97.0" text="Membership Id" />
+          <TableColumn fx:id="memberName" prefWidth="108.0" text="Name of Member" />
+            <TableColumn fx:id="contactNumber" prefWidth="75.0" text="Contact No." />
+            <TableColumn fx:id="contactAddress" prefWidth="101.0" text="Contact Address" />
+            <TableColumn fx:id="adhaarCard" prefWidth="93.0" text="Adhaar Card No." />
+            <TableColumn fx:id="startDate" prefWidth="152.0" text="Start date of Membership" />
+            <TableColumn fx:id="endDate" prefWidth="149.0" text="End Date of Membership" />
+            <TableColumn fx:id="status" prefWidth="47.0" text="Status" />
+            <TableColumn fx:id="fine" prefWidth="33.0" text="fine" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
